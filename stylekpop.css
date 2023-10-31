@@ -1,0 +1,125 @@
+
+
+
+
+
+body {
+    background-color: #5a8bbc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    border-radius: 5px;
+ 
+    background-image: url("./imagenes/concierto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  h1 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  p {
+    color: #ffffff;
+    line-height: 1.5;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+   
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .btn-outline-dark {
+    background-color:#17a2b8;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+    
+  }
+  
+  
+  
+  .btn-info {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    
+  }
+
+ 
+  
+  .btn-info:hover {
+    background-color: #138496;
+    border-color: #138496;
+    
+  }
+
+  .buttondato{
+    text-align: center;
+  }
+
+  .exo{
+    
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+        color: #760000;
+        font-size: 50px;
+      }
+      
+      .group-info {
+        margin-bottom: 20px;
+      }
+      
+      .group-info h3 {
+        color: #007bff;
+        text-align: center;
+      }
+      
+      .group-info p {
+        color: #555;
+        margin-top: 5px;
+      
+  }
+
+.imgidol{
+    max-width: 400px;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.boton{
+    text-align: center;
+}
+
+  

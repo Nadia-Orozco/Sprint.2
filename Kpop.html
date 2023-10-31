@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="stylekpop.css">
+    <title>K-pop Fan Page</title>
+    <!--estilos de Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>
+    // Función para mostrar un mensaje de bienvenida
+    function mostrarBienvenida() {
+      alert('¡Bienvenido/a a nuestra página dedicada al K-pop!');
+    }
+    
+    
+    
+    
+    // Función para mostrar información de un grupo de K-pop
+    function mostrarInformacionGrupo(grupo) {
+      var informacion = '';
+      
+      if (grupo === 'BTS') {
+        informacion = 'En 2018, BTS se convirtió en el primer grupo de K-pop en alcanzar y mantener el primer lugar en la lista Billboard 200 con su álbum "Love Yourself: Tear". Fue la primera vez en 12 años que un álbum en idioma no inglés ocupó el primer lugar en esa lista.';
+      } else if (grupo === 'BLACKPINK') {
+        informacion = 'BLACKPINK se convirtió en el primer grupo de chicas de K-pop en actuar en el Festival de Música y Artes de Coachella Valley en 2019. Su actuación atrajo una gran atención y generó elogios de la crítica internacional.';
+      } else if (grupo === 'EXO') {
+        informacion = 'EXO es conocido por tener una gran cantidad de fanáticos dedicados, y sus seguidores se llaman a sí mismos "EXO-L". El nombre "EXO-L" proviene de la combinación de las palabras "EXO" y "Love", y el símbolo del fandom es una combinación de las iniciales "EXO" y la letra "L" estilizada.';
+      } else if(grupo=='TWICE'){
+        informacion = 'TWICE es conocido por su habilidad en la coreografía de baile. De hecho, su coreografía para la canción "TT" se volvió viral en todo el mundo debido a su movimiento de baile característico, donde forman una "T" con sus brazos mientras mueven sus dedos como si estuvieran llorando, imitando el gesto de las caritas tristes "TT" utilizadas en mensajes de texto y redes sociales. Este movimiento se convirtió en un fenómeno y muchas personas comenzaron a imitarlo en línea.';
+      }
+      
+      alert(informacion);
+    }
+  </script>
+</head>
+<body >
+  <div class="container">
+    <h1 class="mt-4" >K-pop Fan Page</h1>
+    
+    <button class="btn btn-primary mt-4" onclick="mostrarBienvenida()">¡Haz clic aquí!</button>
+    
+\<!--  
+Botones que derivan a un link en donde se pueden ver los videos
+\-->  
+    <div class="boton">
+    <h2 class="mt-4">Hace click y mira el MV mas famoso de cada grupo:</h2>
+      <a   href="https://www.youtube.com/watch?v=gdZLi9oWNZg" target="_blank">
+        <button >"Dynamite" de BTS</button>
+      </a>
+      <a href="https://www.youtube.com/watch?v=2S24-y0Ij3Y" target="_blank">
+        <button >#Kill This Love" de BLACKPINK</button>
+      </a>
+      <a  href="https://www.youtube.com/watch?v=pSudEWBAYRE" target="_blank">
+        <button >"Love Shot" de EXO</button>
+      </a>
+      <a   href="https://www.youtube.com/watch?v=3ymwOvzhwHs" target="_blank">
+        <button >"Feel Special" de TWICE</button>
+      </a>  
+      </div>
+
+\<!--  
+Botones en donde se coloca un dato de cada grupo de idolos
+\-->  
+    <div class="buttondato">
+     <h2 class="mt-4">Datos curiosos de los grupos:</h2>
+     <button class="btn btn-info" onclick="mostrarInformacionGrupo('BTS')">Dato curioso de BTS</button>
+     <button class="btn btn-info" onclick="mostrarInformacionGrupo('BLACKPINK')">Dato curioso de BLACKPINK</button>
+     <button class="btn btn-info" onclick="mostrarInformacionGrupo('EXO')">Dato curioso de EXO</button>
+     <button class="btn btn-info" onclick="mostrarInformacionGrupo('TWICE')">Dato curioso de TWICE</button>
+    </div>
+  </div>
+
+
+  <h1>Información de Grupos de K-pop</h1>
+  
+  <section class="group-info">
+    <h2 class="exo">BTS</h2>
+    <img class="imgidol" src="./imagenes/bts.jpg" alt="BTS">
+    <h3>Integrantes:</h3>
+    <p>RM, Jin, Suga, J-Hope, Jimin, V, Jungkook</p>
+    <h3>Debut:</h3>
+    <p>13 de junio de 2013</p>
+    <h3>Agencia:</h3>
+    <p>Big Hit Entertainment</p>
+    <p>BTS es un grupo de K-pop formado por Big Hit Entertainment (ahora conocida como HYBE Corporation).</p>
+    <p>Han obtenido un éxito internacional significativo y han sido reconocidos por su música, letras introspectivas y actuaciones enérgicas.</p>
+    <p>Su álbum "Love Yourself: Tear" se convirtió en el primer álbum en idioma no inglés en encabezar la lista Billboard 200.</p>
+    <p>Han ganado numerosos premios, incluyendo varios premios Billboard Music Awards y American Music Awards.</p>
+    <p>Han utilizado su plataforma para abordar temas sociales y promover el amor propio y la superación personal.</p>
+    <img class="imgidol" src="./imagenes/sep.jpg" alt="BTS">
+  </section>
+  </section>
+  
+  <section class="group-info">
+    <h2 class="exo">EXO</h2>
+    <img class="imgidol" src="./imagenes/exo.jpg" alt="EXO">
+    <h3>Integrantes:</h3>
+    <p>Xiumin, Suho, Lay, Baekhyun, Chen, Chanyeol, D.O., Kai, Sehun</p>
+    <h3>Debut:</h3>
+    <p>8 de abril de 2012</p>
+    <h3>Agencia:</h3>
+    <p>SM Entertainment</p>
+    <p>EXO es un grupo de K-pop formado por SM Entertainment.</p>
+    <p>Han sido reconocidos por su estilo musical versátil, desde pop pegajoso hasta baladas emocionales y R&B.</p>
+    <p>Han ganado múltiples premios, incluyendo premios en los Mnet Asian Music Awards y los Golden Disc Awards.</p>
+    <p>Algunos de los miembros también han participado en actividades en solitario, como actuaciones en dramas y lanzamientos de música propia.</p>
+    <p>Han ganado una gran base de seguidores tanto en Corea del Sur como internacionalmente.</p>
+    <img class="imgidol" src="./imagenes/sep.jpg" alt="EXO">
+  </section>
+  
+  <section class="group-info">
+    <h2 class="exo">TWICE</h2>
+    <img class="imgidol" src="./imagenes/twice.jpg" alt="TWICE">
+    <h3>Integrantes:</h3>
+    <p>Nayeon, Jeongyeon, Momo, Sana, Jihyo, Mina, Dahyun, Chaeyoung, Tzuyu</p>
+    <h3>Debut:</h3>
+    <p>20 de octubre de 2015</p>
+    <h3>Agencia:</h3>
+    <p>JYP Entertainment</p>
+    <p>TWICE es un grupo de chicas formado por JYP Entertainment.</p>
+    <p>Han ganado popularidad por su estilo musical alegre y pegajoso, y han sido reconocidas por su talento en el canto y el baile.</p>
+    <p>Han lanzado varios éxitos que han encabezado las listas de música en Corea del Sur.</p>
+    <p>Han ganado premios en los Mnet Asian Music Awards, los Asia Artist Awards y los Seoul Music Awards.</p>
+    <p>Son conocidas por su carisma en el escenario y su interacción cercana con los fanáticos.</p>
+    <img class="imgidol" src="./imagenes/sep.jpg" alt="TWICE">
+  </section>
+  
+  <section class="group-info">
+    <h2 class="exo">BLACKPINK</h2>
+    <img class="imgidol" src="./imagenes/blackpink.jpg" alt="BLACKPINK">
+    <h3>Integrantes:</h3>
+    <p>Jisoo, Jennie, Rosé, Lisa</p>
+    <h3>Debut:</h3>
+    <p>8 de agosto de 2016</p>
+    <h3>Agencia:</h3>
+    <p>YG Entertainment</p>
+    <p>BLACKPINK es un grupo de chicas formado por YG Entertainment.</p>
+    <p>Han sido aclamadas por su estilo musical único que fusiona el pop, el hip-hop y la música electrónica.</p>
+    <p>Han obtenido un gran éxito comercial y han roto varios récords, incluyendo el video musical de K-pop más visto en 24 horas con su canción "How You Like That".</p>
+    <p>Han colaborado con artistas internacionales como Lady Gaga y Selena Gomez.</p>
+    <p>Han ganado premios en ceremonias como los Melon Music Awards y los Gaon Chart Music Awards.</p>
+  </section>
+  </section>
+
+
+  <footer>
+    <p>Estos grupos han dejado un impacto significativo en la industria del K-pop y han acumulado una gran base de seguidores en todo el mundo.</p>
+  </footer>
+</body>
+</html>
